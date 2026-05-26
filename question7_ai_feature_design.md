@@ -21,7 +21,7 @@ graph TD
     end
     
     C -->|Hash IDs, Skills, Max Hours, Shift Constraints| D
-    D -->|Optimized Roster (using Hash IDs)| E
+    D -->|Optimized Roster using Hash IDs| E
 ```
 
 **คำอธิบาย Diagram:**
