@@ -9,14 +9,14 @@
 
 ```mermaid
 graph TD
-    subgraph Internal Secure Network
+    subgraph internal ["Internal Secure Network"]
         A[(HRIS & Payroll DB)] -->|Raw Employee Data| B[Data Anonymizer / PII Masking]
         B -->|Anonymized Data| C[Data Pipeline / Feature Store]
         E[Shift Validation & Rules Engine] -->|De-anonymize & Update| A
         F[HR Manager / Planner UI] -->|Approve/Edit| E
     end
     
-    subgraph AI Infrastructure (Cloud / Private VPC)
+    subgraph ai ["AI Infrastructure (Cloud / Private VPC)"]
         D((AI Scheduler Model))
     end
     
